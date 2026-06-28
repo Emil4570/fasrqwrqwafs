@@ -17,7 +17,3 @@ jobs:
           format: markdown
           message: |
             🚀 **Новый Pull Request!**
-            
-            👤 **Автор:** ${{ github.actor }}
-            📝 **Название:** ${{ github.event.pull_request.title }}
-            🔗 **Ссылка:** ${{ github.event.pull_request.html_url }}
