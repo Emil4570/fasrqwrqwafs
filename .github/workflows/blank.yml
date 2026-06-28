@@ -13,7 +13,7 @@ jobs:
         with:
           to: -1003876948415
           token: '8882525010:AAGzv33_Rmxh99-HlNnZRq3zGtu8mQUKvck'
-          thread_id: 537
+          message_thread_id: 537
           format: markdown
           message: |
             🚀 **Новый Pull Request!**
