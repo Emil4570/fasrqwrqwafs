@@ -11,7 +11,8 @@ jobs:
       - name: Send Telegram Message
         uses: appleboy/telegram-action@master
         with:
-          to: 1067839772
+          to: -1004350332359
+          message_thread_id: 2
           token: '8882525010:AAGzv33_Rmxh99-HlNnZRq3zGtu8mQUKvck'
           format: markdown
           message: |
