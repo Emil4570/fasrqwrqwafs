@@ -2,7 +2,7 @@ name: PR Telegram Notification
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
 
 jobs:
   node:
@@ -11,8 +11,9 @@ jobs:
       - name: Send Telegram Message
         uses: appleboy/telegram-action@master
         with:
-          to: 1067839772
+          to: -1003876948415
           token: '8882525010:AAGzv33_Rmxh99-HlNnZRq3zGtu8mQUKvck'
+          thread_id: 537
           format: markdown
           message: |
             🚀 **Новый Pull Request!**
