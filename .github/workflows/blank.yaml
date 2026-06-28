@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send Telegram Message
-        uses: appleboy/telegram-action@master
+        uses: Salmansha08/telegram-github-action@main
         with:
           to: -1004350332359
           message_thread_id: 2
