@@ -1,0 +1,22 @@
+name: PR Telegram Notification
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  node:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram Message
+        uses: appleboy/telegram-action@master
+        with:
+          to: 1067839772
+          token: '8882525010:AAGzv33_Rmxh99-HlNnZRq3zGtu8mQUKvck'
+          format: markdown
+          message: |
+            🚀 **Новый Pull Request!**
+            
+            👤 **Автор:** ${{ github.actor }}
+            📝 **Название:** ${{ github.event.pull_request.title }}
+            🔗 **Ссылка:** ${{ github.event.pull_request.html_url }}
